@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Take Picture From Camera And Gallery</string>
+    <string name="single_image">Single Image</string>
+    <string name="multiple_image">Multiple Image</string>
+    <string name="tap_profile_picture">Tap Profile Picture</string>
+    <string name="loading">Loading...</string>
+</resources>

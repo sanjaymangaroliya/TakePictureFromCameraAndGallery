@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.takepicturefromcameraandgallery"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //Support Design
+    implementation 'com.android.support:design:27+'
+    //MultiDex
+    implementation 'com.android.support:multidex:1.0.1'
+    /* Single image selection library */
+    implementation 'com.kbeanie:multipicker:1.1.31@aar'
+    /* Multiple image selection library */
+    implementation 'com.github.nguyenhoanglam:ImagePicker:1.2.1'
+    /* Universal-image-loader */
+    implementation files('libs/universal-image-loader-1.9.5.jar')
+    /* Circle ImageView */
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    /* Runtime permissions  */
+    implementation 'com.karumi:dexter:4.2.0'
+}
